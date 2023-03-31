@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.nutritions.NutritionFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/protein"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCarbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/carbohydrates"
+        app:layout_constraintEnd_toEndOf="@+id/ivProtein"
+        app:layout_constraintStart_toStartOf="@+id/ivProtein"
+        app:layout_constraintTop_toBottomOf="@+id/ivProtein" />
+
+    <ImageView
+        android:id="@+id/ivCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/calories"
+        app:layout_constraintEnd_toEndOf="@+id/ivCarbohydrates"
+        app:layout_constraintStart_toStartOf="@+id/ivCarbohydrates"
+        app:layout_constraintTop_toBottomOf="@+id/ivCarbohydrates" />
+
+    <TextView
+        android:id="@+id/tvProteinSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/gram"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProtein"
+        app:layout_constraintStart_toEndOf="@+id/ivProtein"
+        app:layout_constraintTop_toTopOf="@+id/ivProtein" />
+
+    <TextView
+        android:id="@+id/tvProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/protein"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProteinSize"
+        app:layout_constraintStart_toEndOf="@+id/tvProteinSize"
+        app:layout_constraintTop_toTopOf="@+id/tvProteinSize" />
+
+    <TextView
+        android:id="@+id/tvCarbohydratesSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/gram"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCarbohydrates"
+        app:layout_constraintStart_toEndOf="@+id/ivCarbohydrates"
+        app:layout_constraintTop_toTopOf="@+id/ivCarbohydrates" />
+
+    <TextView
+        android:id="@+id/tvCarbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/carbohydrates"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCarbohydratesSize"
+        app:layout_constraintStart_toEndOf="@+id/tvCarbohydratesSize"
+        app:layout_constraintTop_toTopOf="@+id/tvCarbohydratesSize" />
+
+    <TextView
+        android:id="@+id/tvCalSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/kal"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCal"
+        app:layout_constraintStart_toEndOf="@+id/ivCal"
+        app:layout_constraintTop_toTopOf="@+id/ivCal" />
+
+    <TextView
+        android:id="@+id/tvCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/calories"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCalSize"
+        app:layout_constraintStart_toEndOf="@+id/tvCalSize"
+        app:layout_constraintTop_toTopOf="@+id/tvCalSize" />
+</androidx.constraintlayout.widget.ConstraintLayout>

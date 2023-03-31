@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailRecipeActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- Step 1 -->
+    <TextView
+        android:id="@+id/step_1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Step"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/step_1_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chop the cucumber into tiny pieces, as small as you can, and place in a bowl. Cover the cucumber with salt and set aside for 30 minutes. The cucumbers will start to exude their juices which will flavour the yogurt nicely."
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/step_1_ingredients_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/step_1_ingredients_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Cucumber\n- Yogurt\n- Salt"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/step_1_equipment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Equipment"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/step_1_equipment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Bowl"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/step_1_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time: 30 minutes"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" />
+
+</FrameLayout>
